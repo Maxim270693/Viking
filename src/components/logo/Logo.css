@@ -1,0 +1,79 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.logo img {
+    position: absolute;
+    width: 271px;
+    height: 32px;
+    left: 111px;
+    top: 23px;
+}
+.nav__item {
+    list-style-type: none;
+    position: absolute;
+    height: 27px;
+    top: 25px;
+    font-family: Mulish,sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    color: #202020;
+}
+.vikings {
+    width: 74px;
+    left: 712px;
+}
+.Ancient {
+    width: 142px;
+    left: 818px;
+}
+.Celtics {
+    width: 66px;
+    left: 991px;
+}
+.sale {
+    width: 54px;
+    left: 1089px;
+    text-transform: uppercase;
+    color: #CC0000;
+}
+.btn {
+    width: 24px;
+    height: 24px;
+}
+.search__btn {
+    position: absolute;
+    left: 1250px;
+    top: 27px;
+}
+.basket__btn {
+    position: absolute;
+    left: 1305px;
+    top: 27px;
+}
+/*span {*/
+/*    position: absolute;*/
+/*    width: 6px;*/
+/*    height: 12px;*/
+/*    left: 1254px;*/
+/*    top: 22px;*/
+
+/*    font-family: Mulish,sans-serif;*/
+/*    font-style: normal;*/
+/*    font-weight: normal;*/
+/*    font-size: 9px;*/
+/*    line-height: 11px;*/
+/*    !* identical to box height *!*/
+
+/*    text-align: center;*/
+/*    text-transform: uppercase;*/
+
+/*    !* white/100 *!*/
+
+/*    color: #FFFFFF;*/
+/*}*/
