@@ -1,64 +1,37 @@
 
-.vikingLeft {
-    position: absolute;
-    width: 499px;
-    height: 520px;
-    top: 80px;
-    background: linear-gradient(90deg, rgba(20, 25, 37, 0) 0%, #131824 30.57%);
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-}
-.viking {
-    position: absolute;
-    width: 741px;
-    height: 520px;
-    left: 324px;
-    top: 80px;
-}
-.vikingRight {
-    position: absolute;
-    width: 652px;
-    height: 520px;
-    left: 884px;
-    top: 80px;
-    background: linear-gradient(90deg, rgba(20, 25, 37, 0) 0%, #131824 30.57%);
+.header__img {
+    background: url("../../img/Viking1.png") no-repeat center top / cover ;
+    height: 88.7vh;
+    width: 100%;
 }
 h1 {
-    position: absolute;
-    width: 563px;
-    height: 88px;
-    left: 414px;
-    top: 312px;
     font-family: "Goudy Bookletter 1911", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    line-height: 44px;
+    font-weight: 400;
+    padding: 297px 0px 24px;
+    margin-left: -20px;
+    color: #fff;
     text-align: center;
-    color: #FFFFFF;
+    line-height: 43.53px;
+    width: 100%;
+    font-size: 32px;
 }
-span {
-    position: absolute;
-    width: 121px;
-    height: 21px;
-    left: 623px;
-    top: 424px;
+.header__text {
     font-family: Mulish,sans-serif;
-    font-style: normal;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+    color: #fff;
     text-align: center;
-    color: #FFFFFF;
+    margin-bottom: 33px;
+}
+.header__text-item{
+    color: #6A6B72;
+    text-decoration: line-through;
 }
 .header__btn {
-    position: absolute;
+    font-family: Mulish,sans-serif;
     width: 163px;
     height: 48px;
-    left: 602px;
-    top: 478px;
-    right: 22px;
-    font-family: Mulish,sans-serif;
-    font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;
@@ -72,4 +45,5 @@ span {
     border-radius: 4px;
     color: #FFFFFF;
     text-shadow: 0px -1px 0px rgba(32, 32, 32, 0.33);
+    margin: 0 auto;
 }

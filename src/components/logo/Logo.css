@@ -1,79 +1,162 @@
+button, li {
+    cursor: pointer;
+}
+img {
+    max-width: 100%;
+}
 
 * {
     padding: 0;
     margin: 0;
 }
 
-.logo img {
-    position: absolute;
-    width: 271px;
-    height: 32px;
-    left: 111px;
-    top: 23px;
+header {
+    display: flex;
+    align-items: center;
 }
-.nav__item {
+header .logo__wrapper img {
+    padding: 23px 330px 25px 111px;
+    max-width: 271px;
+}
+header .nav__items {
     list-style-type: none;
-    position: absolute;
-    height: 27px;
-    top: 25px;
     font-family: Mulish,sans-serif;
-    font-style: normal;
-    font-weight: bold;
+    margin-left: 80px;
+}
+header .nav__items li {
+    display: inline-block;
+    color: #202020;
     font-size: 21px;
     line-height: 26px;
-    text-align: center;
-    color: #202020;
+    font-weight: 700;
+    margin-right: 32px;
+    transition: color .4s ease;
 }
-.vikings {
-    width: 74px;
-    left: 712px;
+header .nav__items li:hover {
+    color: #866a6a;
 }
-.Ancient {
-    width: 142px;
-    left: 818px;
-}
-.Celtics {
-    width: 66px;
-    left: 991px;
-}
-.sale {
-    width: 54px;
-    left: 1089px;
-    text-transform: uppercase;
+header .nav__items li:last-child {
     color: #CC0000;
+    text-transform: uppercase;
+    margin-right: 40px;
 }
-.btn {
-    width: 24px;
-    height: 24px;
+header .nav__items li:last-child:hover {
+    color: #ff0000;
+    text-shadow: 1px 3px 7px;
 }
-.search__btn {
-    position: absolute;
-    left: 1250px;
-    top: 27px;
+header .search__btn {
+    margin-right: 27.5px;
 }
-.basket__btn {
-    position: absolute;
-    left: 1305px;
-    top: 27px;
-}
-/*span {*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.modal__items {*/
+/*}*/
+
+/*.modal__item {*/
+/*    !*display: flex;*!*/
+/*}*/
+
+/*.modal__item img {*/
+/*    width: 64px;*/
+/*    height: 64px;*/
+/*}*/
+
+/*.modal__btn {*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    align-content: flex-end;*/
+/*    justify-content: flex-start*/
+/*}*/
+
+/*.span {*/
+/*    color: red;*/
+/*}*/
+
+/*.logo img {*/
 /*    position: absolute;*/
-/*    width: 6px;*/
-/*    height: 12px;*/
-/*    left: 1254px;*/
-/*    top: 22px;*/
+/*    width: 271px;*/
+/*    height: 32px;*/
+/*    left: 111px;*/
+/*    top: 23px;*/
+/*}*/
 
-/*    font-family: Mulish,sans-serif;*/
+/*.nav__item {*/
+/*    list-style-type: none;*/
+/*    position: absolute;*/
+/*    height: 27px;*/
+/*    top: 25px;*/
+/*    font-family: Mulish, sans-serif;*/
 /*    font-style: normal;*/
-/*    font-weight: normal;*/
-/*    font-size: 9px;*/
-/*    line-height: 11px;*/
-/*    !* identical to box height *!*/
-
+/*    font-weight: bold;*/
+/*    font-size: 21px;*/
+/*    line-height: 26px;*/
 /*    text-align: center;*/
+/*    color: #202020;*/
+/*}*/
+
+/*.vikings {*/
+/*    width: 74px;*/
+/*    left: 712px;*/
+/*}*/
+
+/*.Ancient {*/
+/*    width: 142px;*/
+/*    left: 818px;*/
+/*}*/
+
+/*.Celtics {*/
+/*    width: 66px;*/
+/*    left: 991px;*/
+/*}*/
+
+/*.sale {*/
+/*    width: 54px;*/
+/*    left: 1089px;*/
 /*    text-transform: uppercase;*/
+/*    color: #CC0000;*/
+/*}*/
 
-/*    !* white/100 *!*/
+/*.btn {*/
+/*    width: 24px;*/
+/*    height: 24px;*/
+/*    cursor: pointer;*/
+/*}*/
 
-/*    color: #FFFFFF;*/
+/*.search__btn {*/
+/*    position: absolute;*/
+/*    left: 1250px;*/
+/*    top: 27px;*/
+/*}*/
+
+/*.basket__btn {*/
+/*    position: absolute;*/
+/*    left: 1305px;*/
+/*    top: 27px;*/
 /*}*/
