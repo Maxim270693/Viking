@@ -1,17 +1,18 @@
 import React, {useState} from "react";
-import './Logo.css'
-import logo from '../../img/logo.png'
-import search from '../../img/search.png'
-import basket from '../../img/basket.png'
+import './Logo.css';
+import logo from '../../img/logo.png';
+import search from '../../img/search.png';
+import basket from '../../img/basket.png';
 import {Header} from "../Header/Header";
 import {Modal} from "../modal/Modal";
 import img1 from '../../img/img1.png';
 import img2 from '../../img/img2.png';
 import img3 from '../../img/img3.png';
+import {NavLink} from "react-router-dom";
 
 export function Logo() {
 
-    const [modalActive, setModalActive] = useState(true)
+    const [modalActive, setModalActive] = useState(false)
 
     return (
         <div className='logo'>
@@ -85,6 +86,16 @@ export function Logo() {
                         </li>
                     </ul>
                 </div>
+                <div className="modal__footer">
+                    <div className='modal__footer_text'>
+                        <h3>Subtotal</h3>
+                        <p>$144.95</p>
+                    </div>
+                    <div className="modal__footer_btn">
+                        <button className="modal__footer_btn_left">View cart</button>
+                        <button className="modal__footer_btn_right">Proceed to checkout</button>
+                    </div>
+                </div>
             </Modal>
             <header>
                 <div className="logo__wrapper">
@@ -99,7 +110,7 @@ export function Logo() {
                     </ul>
                 </nav>
                 <div className="btn">
-                    <img onClick={() => alert("Search")} src={search} alt="search" className="search__btn"/>
+                    <NavLink to={'/search/'}><img src={search} alt="search" className="search__btn"/></NavLink>
                     <img onClick={() => alert("Hello")} src={basket} alt="basket" className="basket__btn"/>
                     {/*<span>8</span>*/}
                 </div>

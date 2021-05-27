@@ -1,0 +1,41 @@
+.search__form {
+    display: flex;
+    max-width: 300px;
+    margin: 20% auto 0;
+}
+.search__input {
+    height: 27px;
+    width: 100%;
+    font-style: italic;
+    font-size: 1.125em;
+    border-color: transparent;
+    background-color: #f6f6f6;
+    color: #1c1d1d;
+    padding: 8px 10px;
+}
+.search__form_block {
+    margin: 0;
+    position: relative;
+    white-space: nowrap;
+    width: 1%;
+    padding: 0;
+}
+.search__form_btn {
+    height: 45px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    font-size: .8125em;
+    background-color: #5a5d60;
+}
+.search__form_icon {
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+}
+.search__form_icon img {
+    height: 20px;
+    width: 20px;
+}
