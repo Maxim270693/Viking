@@ -1,9 +1,6 @@
 button, li {
     cursor: pointer;
 }
-/*img {*/
-/*    max-width: 100%;*/
-/*}*/
 
 * {
     padding: 0;
@@ -14,15 +11,18 @@ header {
     display: flex;
     align-items: center;
 }
+
 header .logo__wrapper img {
     padding: 23px 330px 25px 111px;
     max-width: 271px;
 }
+
 header .nav__items {
     list-style-type: none;
-    font-family: Mulish,sans-serif;
+    font-family: Mulish, sans-serif;
     margin-left: 80px;
 }
+
 header .nav__items li {
     display: inline-block;
     color: #202020;
@@ -32,20 +32,153 @@ header .nav__items li {
     margin-right: 32px;
     transition: color .4s ease;
 }
+
 header .nav__items li:hover {
     color: #866a6a;
 }
+
 header .nav__items li:last-child {
     color: #CC0000;
     text-transform: uppercase;
     margin-right: 40px;
 }
+
 header .nav__items li:last-child:hover {
     color: #ff0000;
     text-shadow: 1px 3px 7px;
 }
+
 header .search__btn {
     margin-right: 27.5px;
+}
+
+.logo .MobileNavigation {
+    display: none;
+}
+
+
+@media (max-width: 1340px) {
+    header .logo__wrapper img {
+        padding: 23px 211px 25px 82px;
+        max-width: 251px;
+    }
+}
+
+@media (max-width: 1228px) {
+    header .logo__wrapper img {
+        padding: 23px 211px 25px 82px;
+        max-width: 251px;
+    }
+}
+
+@media (max-width: 1171px) {
+    header .logo__wrapper img {
+        padding: 23px 45px 25px 82px;
+        max-width: 251px;
+    }
+}
+
+@media (max-width: 1028px) {
+    /*.logo .Navigation {*/
+    /*    display: none;*/
+    /*}*/
+
+    /*.logo .MobileNavigation {*/
+    /*    display: flex;*/
+    /*}*/
+
+    header .logo__wrapper img {
+        padding: 23px 20px 25px 50px;
+        max-width: 251px;
+    }
+}
+
+/*@media (max-width: 1024px) {*/
+/*    .logo .Navigation {*/
+/*        display: none;*/
+/*    }*/
+
+/*    .logo .MobileNavigation {*/
+/*        display: flex;*/
+/*    }*/
+
+/*    header .logo__wrapper img {*/
+/*        margin: 0 auto;*/
+/*        max-width: 251px;*/
+/*    }*/
+
+/*    .logo .MobileNavigation .Hamburger {*/
+/*        position: absolute;*/
+/*        left: 0;*/
+/*        cursor: pointer;*/
+/*    }*/
+/*}*/
+
+@media (max-width: 990px) {
+    .logo .MobileNavigation .Hamburger {
+        position: absolute;
+        right: 0;
+    }
+
+    header .logo__wrapper img {
+        padding: 23px 0 17px 19px;
+        max-width: 215px;
+    }
+    header .nav__items li {
+        font-size: 17px;
+    }
+}
+@media (max-width: 800px) {
+    .logo .Navigation {
+        display: none;
+    }
+
+    header .search__btn {
+        display: none;
+    }
+
+    .logo .MobileNavigation {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo .MobileNavigation .Hamburger {
+        position: absolute;
+        left: 0;
+    }
+
+    header .logo__wrapper {
+        margin: 0 auto;
+    }
+
+    header .logo__wrapper img {
+        /*padding: 23px 0 17px 19px;*/
+        max-width: 215px;
+    }
+    header .nav__items li {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 640px) {
+    .logo .Navigation {
+        display: none;
+    }
+
+    .logo .MobileNavigation {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo .MobileNavigation .Hamburger {
+        position: absolute;
+        right: 0;
+    }
+
+    header .logo__wrapper img {
+        padding: 23px 10px 25px 17px;
+        max-width: 243px;
+    }
 }
 
 
@@ -73,90 +206,3 @@ header .search__btn {
 
 
 
-
-
-
-/*.modal__items {*/
-/*}*/
-
-/*.modal__item {*/
-/*    !*display: flex;*!*/
-/*}*/
-
-/*.modal__item img {*/
-/*    width: 64px;*/
-/*    height: 64px;*/
-/*}*/
-
-/*.modal__btn {*/
-/*    display: flex;*/
-/*    flex-wrap: wrap;*/
-/*    align-content: flex-end;*/
-/*    justify-content: flex-start*/
-/*}*/
-
-/*.span {*/
-/*    color: red;*/
-/*}*/
-
-/*.logo img {*/
-/*    position: absolute;*/
-/*    width: 271px;*/
-/*    height: 32px;*/
-/*    left: 111px;*/
-/*    top: 23px;*/
-/*}*/
-
-/*.nav__item {*/
-/*    list-style-type: none;*/
-/*    position: absolute;*/
-/*    height: 27px;*/
-/*    top: 25px;*/
-/*    font-family: Mulish, sans-serif;*/
-/*    font-style: normal;*/
-/*    font-weight: bold;*/
-/*    font-size: 21px;*/
-/*    line-height: 26px;*/
-/*    text-align: center;*/
-/*    color: #202020;*/
-/*}*/
-
-/*.vikings {*/
-/*    width: 74px;*/
-/*    left: 712px;*/
-/*}*/
-
-/*.Ancient {*/
-/*    width: 142px;*/
-/*    left: 818px;*/
-/*}*/
-
-/*.Celtics {*/
-/*    width: 66px;*/
-/*    left: 991px;*/
-/*}*/
-
-/*.sale {*/
-/*    width: 54px;*/
-/*    left: 1089px;*/
-/*    text-transform: uppercase;*/
-/*    color: #CC0000;*/
-/*}*/
-
-/*.btn {*/
-/*    width: 24px;*/
-/*    height: 24px;*/
-/*    cursor: pointer;*/
-/*}*/
-
-/*.search__btn {*/
-/*    position: absolute;*/
-/*    left: 1250px;*/
-/*    top: 27px;*/
-/*}*/
-
-/*.basket__btn {*/
-/*    position: absolute;*/
-/*    left: 1305px;*/
-/*    top: 27px;*/
-/*}*/
