@@ -16,12 +16,10 @@ export function Logo() {
 
     const [modalActive, setModalActive] = useState(true)
     const [addCart,setAddCart] = useState(1)
-    // const [addCart,setAddCart] = useState(1)
 
     const addWolfChainHandler = () => setAddCart(addCart + 1)
     const removeWolfChainHandler = () => setAddCart(addCart - 1)
 
-    //const addWolfHeadHandler =
 
     return (
         <div className='logo'>

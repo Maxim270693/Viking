@@ -7,10 +7,10 @@ export const MobileNavigation = () => {
 
     const [open, setOpen] = useState(false)
 
-    const hamburgerIcon =  <VscMenu className='Hamburger' onClick={() => setOpen(!open)}/>
-    const closeIcon =  <GrClose className='Hamburger' onClick={() => setOpen(!open)}/>
+    const hamburgerIcon = <VscMenu className='Hamburger' onClick={() => setOpen(!open)}/>
+    const closeIcon = <GrClose className='Hamburger' onClick={() => setOpen(!open)}/>
 
-    return(
+    return (
         <div>
             <nav className='MobileNavigation'>
                 {open ? closeIcon : hamburgerIcon}
@@ -19,3 +19,10 @@ export const MobileNavigation = () => {
         </div>
     )
 }
+
+
+/*
+* font-size: 27px;
+  margin-left: 26px;
+* */
+
