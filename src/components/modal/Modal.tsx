@@ -4,7 +4,6 @@ import './modal.css'
 
 type PropsType = {
     modalActive: boolean
-    setModalActive: (active: boolean) => void
     children: any
 }
 

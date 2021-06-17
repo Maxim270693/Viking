@@ -159,6 +159,10 @@ header .search__btn {
         font-size: 17px;
     }
 
+    h1 {
+        margin: 0;
+    }
+
     .basket__btn {
         width: 18px;
     }

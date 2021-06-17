@@ -11,10 +11,15 @@ import img3 from '../../img/img3.png';
 import {NavLink} from "react-router-dom";
 import {MobileNavigation} from "../mobileNavigation/mobileNavigation";
 import {Navigation} from "../navigation/Navigation";
+import {useDispatch, useSelector} from "react-redux";
+import {RootStoreType} from "../../main/bll/store";
+import {isModalAC} from "../../main/bll/reducer";
 
 export function Logo() {
 
-    const [modalActive, setModalActive] = useState(true)
+    const dispatch = useDispatch()
+    const isModal = useSelector<RootStoreType,boolean>((state) => state.reducer.isModal )
+
     const [addCart,setAddCart] = useState(1)
 
     const addWolfChainHandler = () => setAddCart(addCart + 1)
@@ -23,10 +28,10 @@ export function Logo() {
 
     return (
         <div className='logo'>
-            <Modal modalActive={modalActive} setModalActive={setModalActive}>
+            <Modal modalActive={isModal}>
                 <div className='modal__cart'>
                     <p className='modal__cart_title'>Cart (8 items)</p>
-                    <div className='modal__cart_close' onClick={() => setModalActive(false)}>
+                    <div className='modal__cart_close' onClick={() => dispatch(isModalAC(false) )}>
                         <span className='modal__cart_left'></span>
                         <span className='modal__cart_right'></span>
                     </div>
@@ -105,19 +110,10 @@ export function Logo() {
                     <img src={logo} alt={"logo"}/>
                 </div>
                 <Navigation/>
-                <MobileNavigation/>
-                {/*<nav className="nav">*/}
-                {/*    <ul className="nav__items">*/}
-                {/*        <li className="nav__item vikings">Vikings</li>*/}
-                {/*        <li className="nav__item Ancient">Ancient Egypt</li>*/}
-                {/*        <li className="nav__item Celtics">Celtics</li>*/}
-                {/*        <li onClick={() => setModalActive(true)} className="nav__item sale">Sale</li>*/}
-                {/*    </ul>*/}
-                {/*</nav>*/}
+                <MobileNavigation />
                 <div className="btn">
                     <NavLink to={'/search/'}><img src={search} alt="search" className="search__btn"/></NavLink>
                     <img onClick={() => alert("Hello")} src={basket} alt="basket" className="basket__btn"/>
-                    {/*<span>8</span>*/}
                 </div>
             </header>
             <Header/>

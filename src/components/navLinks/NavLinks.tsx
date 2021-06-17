@@ -1,8 +1,10 @@
-import React, {useState} from "react";
+import React from "react";
+import {isModalAC} from "../../main/bll/reducer";
+import {useDispatch} from "react-redux";
+
 
 export const NavLinks = () => {
-
-    const [modalActive,setModalActive] = useState( true)
+    const dispatch = useDispatch()
 
     return(
         <div>
@@ -10,7 +12,7 @@ export const NavLinks = () => {
                 <li className="nav__item vikings">Vikings</li>
                 <li className="nav__item Ancient">Ancient Egypt</li>
                 <li className="nav__item Celtics">Celtics</li>
-                <li onClick={() => setModalActive(true)} className="nav__item sale">Sale</li>
+                <li onClick={() => dispatch(isModalAC(true))} className="nav__item sale">Sale</li>
             </ul>
         </div>
     )
