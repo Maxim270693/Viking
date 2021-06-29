@@ -1,0 +1,17 @@
+.wrapper {
+    display: flex;
+}
+.product {
+    width: 659px;
+    height: 524px;
+    margin: 20px 20px 16px 111px;
+}
+
+.productTitle {
+    font-family: Mulish,sans-serif;
+    font-weight: 400;
+    padding: 20px 111px 38px 0;
+    font-size: 32px;
+    Line-height: 43.53px;
+    color: #202020;
+}

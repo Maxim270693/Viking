@@ -1,19 +1,15 @@
 import React, {useState} from "react";
 import './Logo.css';
-import logo from '../../img/logo.png';
-import search from '../../img/search.png';
-import basket from '../../img/basket.png';
 import {Header} from "../Header/Header";
 import {Modal} from "../modal/Modal";
 import img1 from '../../img/img1.png';
 import img2 from '../../img/img2.png';
 import img3 from '../../img/img3.png';
 import {NavLink} from "react-router-dom";
-import {MobileNavigation} from "../mobileNavigation/mobileNavigation";
-import {Navigation} from "../navigation/Navigation";
 import {useDispatch, useSelector} from "react-redux";
 import {RootStoreType} from "../../main/bll/store";
 import {isModalAC} from "../../main/bll/reducer";
+import Nav from "../nav/Nav";
 
 export function Logo() {
 
@@ -42,14 +38,15 @@ export function Logo() {
                             <div className='modal__item_item'>
                                 <img src={img1} alt="img1"/>
                                 <div className="modal__text">
-                                    <p className="modal__text_item">Handmade Stainless Steel Massive<br/> Wolf Chain
+                                    <NavLink to={'/product'} className="modal__text_item">
+                                        Handmade Stainless Steel Massive<br/> Wolf Chain
                                         with
                                         Odin’s Protection<br/> Charm - 50cm /
                                         20in
                                         <div className='number'>$19.95
                                             <span className='number__item'>$29.95</span>
                                         </div>
-                                    </p>
+                                    </NavLink>
                                 </div>
                             </div>
                             <div className="modal__btn">
@@ -105,17 +102,7 @@ export function Logo() {
                     </div>
                 </div>
             </Modal>
-            <header>
-                <div className="logo__wrapper">
-                    <img src={logo} alt={"logo"}/>
-                </div>
-                <Navigation/>
-                <MobileNavigation />
-                <div className="btn">
-                    <NavLink to={'/search/'}><img src={search} alt="search" className="search__btn"/></NavLink>
-                    <img onClick={() => alert("Hello")} src={basket} alt="basket" className="basket__btn"/>
-                </div>
-            </header>
+            <Nav/>
             <Header/>
         </div>
     )
