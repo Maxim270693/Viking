@@ -8,19 +8,23 @@ import img3 from '../../img/img3.png';
 import {NavLink} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {RootStoreType} from "../../main/bll/store";
-import {isModalAC} from "../../main/bll/reducer";
+import {isModalAC, PriceType} from "../../main/bll/reducer";
 import Nav from "../nav/Nav";
 
 export function Logo() {
 
     const dispatch = useDispatch()
-    const isModal = useSelector<RootStoreType,boolean>((state) => state.reducer.isModal )
+    const isModal = useSelector<RootStoreType, boolean>((state) => state.price.isModal )
 
-    const [addCart,setAddCart] = useState(1)
+
+    const [addCart,setAddCart] = useState(0)
+    const [addSum,setAddSum] = useState(19.95)
+
+    let sumTest = addSum * addCart
+    let totalSum = sumTest.toFixed(2)
 
     const addWolfChainHandler = () => setAddCart(addCart + 1)
     const removeWolfChainHandler = () => setAddCart(addCart - 1)
-
 
     return (
         <div className='logo'>
@@ -94,7 +98,7 @@ export function Logo() {
                 <div className="modal__footer">
                     <div className='modal__footer_text'>
                         <h3>Subtotal</h3>
-                        <p>$144.95</p>
+                        <p>{addCart ? <span>{`$${totalSum}`}</span> : <span>$0</span>}</p>
                     </div>
                     <div className="modal__footer_btn">
                         <button className="modal__footer_btn_left">View cart</button>

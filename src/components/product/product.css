@@ -1,3 +1,7 @@
+* {
+    font-family: Mulish, sans-serif;
+    font-weight: 400;
+}
 .wrapper {
     display: flex;
 }
@@ -8,10 +12,107 @@
 }
 
 .productTitle {
-    font-family: Mulish,sans-serif;
-    font-weight: 400;
+    font-family: "Goudy Bookletter 1911", sans-serif;
     padding: 20px 111px 38px 0;
     font-size: 32px;
     Line-height: 43.53px;
     color: #202020;
 }
+h4 {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26.36px;
+    color: #000;
+    padding-bottom: 8px;
+}
+.wrapper__block {
+    display: flex;
+    justify-content: space-between;
+    width: 293px;
+    padding: 16px 12px;
+    border: 1px solid #D8D8D8;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    align-items: center;
+    text-transform: uppercase;
+    color: #000;
+    box-shadow: 0 2px 1px #D8D8D8;
+}
+.arrow {
+    width: 32px;
+    height: 16px;
+    cursor: pointer;
+}
+.wrapper__price {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    color: #CC0000;
+    padding: 18px 9px 34px 0;
+}
+.wrapper__price_item {
+    font-size: 13px;
+    line-height: 16px;
+    color: #232231;
+}
+.wrapper__btns {
+    display: flex;
+}
+.wrapper__btn_left {
+    width: 44px;
+    height: 48px;
+    background-color: #FFFFFF;
+    text-align: center;
+    border: 1px solid #D8D8D8;
+    box-sizing: border-box;
+    box-shadow: inset 0 -2px 2px rgba(0, 0, 0, 0.13);
+    border-radius: 4px 0 0 4px;
+}
+.wrapper__btn_center {
+    width: 63px;
+    height: 48px;
+    border: 1px solid #D8D8D8;
+    box-sizing: border-box;
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.13);
+}
+.wrapper__btn_right {
+    width: 44px;
+    height: 48px;
+    background-color: #FFFFFF;
+    text-align: center;
+    border: 1px solid #D8D8D8;
+    box-sizing: border-box;
+    box-shadow: inset 0 -2px 2px rgba(0, 0, 0, 0.13);
+    border-radius: 0 4px 4px 0;
+    margin-bottom: 46px;
+}
+.wrapper_add {
+    width: 262px;
+    height: 21px;
+    font-weight: 700;
+    line-height: 20px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #950000;
+    border-radius: 6px;
+    background-color: #CC0000;
+    color: #fff;
+    padding: 13px 83px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.wrapper__text {
+    line-height: 20px;
+    font-size: 16px;
+}
+.wrapper__text_item {
+    font-weight: 700;
+}
+
+/*@media (max-width: 1340px) {*/
+/*    .Hamburger {*/
+/*        display: none;*/
+/*    }*/
+/*}*/
