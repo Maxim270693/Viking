@@ -8,7 +8,7 @@ import img3 from '../../img/img3.png';
 import {NavLink} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {RootStoreType} from "../../main/bll/store";
-import {isModalAC, PriceType} from "../../main/bll/reducer";
+import {isModalAC} from "../../main/bll/reducer";
 import Nav from "../nav/Nav";
 
 export function Logo() {
@@ -18,10 +18,11 @@ export function Logo() {
 
 
     const [addCart,setAddCart] = useState(0)
+    const [addCartSecond,setAddCardSecond] = useState(0)
+    const [addCartThird,setAddCardThird] = useState(0)
     const [addSum,setAddSum] = useState(19.95)
 
-    let sumTest = addSum * addCart
-    let totalSum = sumTest.toFixed(2)
+    let totalSum = (addSum * addCart).toFixed(2)
 
     const addWolfChainHandler = () => setAddCart(addCart + 1)
     const removeWolfChainHandler = () => setAddCart(addCart - 1)
@@ -54,7 +55,7 @@ export function Logo() {
                                 </div>
                             </div>
                             <div className="modal__btn">
-                                <button onClick={removeWolfChainHandler} className="modal__btn_left">-</button>
+                                <button onClick={removeWolfChainHandler} className="modal__btn_left" disabled={ addCart <= 0 }>-</button>
                                 <button className="modal__btn_center">{addCart}</button>
                                 <button onClick={addWolfChainHandler} className="modal__btn_right">+</button>
                             </div>
@@ -71,8 +72,8 @@ export function Logo() {
                                 </div>
                             </div>
                             <div className="modal__btn">
-                                <button onClick={() => alert('Минус')} className="modal__btn_left">-</button>
-                                <button className="modal__btn_center">1</button>
+                                <button onClick={() => alert('Минус')} className="modal__btn_left" disabled={ addCart <= 0 }>-</button>
+                                <button className="modal__btn_center">{addCartSecond}</button>
                                 <button onClick={() => alert("ПЛЮС")} className="modal__btn_right">+</button>
                             </div>
                         </li>
@@ -88,8 +89,8 @@ export function Logo() {
                                </div>
                            </div>
                             <div className="modal__btn">
-                                <button onClick={() => alert('Минус')} className="modal__btn_left">-</button>
-                                <button className="modal__btn_center">1</button>
+                                <button onClick={() => alert('Минус')} className="modal__btn_left" disabled={ addCart <= 0 }>-</button>
+                                <button className="modal__btn_center">{addCartThird}</button>
                                 <button onClick={() => alert("ПЛЮС")} className="modal__btn_right">+</button>
                             </div>
                         </li>

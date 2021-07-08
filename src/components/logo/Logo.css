@@ -17,12 +17,21 @@ header .logo__wrapper img {
     max-width: 271px;
 }
 
-header .nav__items {
+header .nav__items  {
     list-style-type: none;
     font-family: Mulish, sans-serif;
     margin-left: 80px;
 }
-
+.vikings {
+    display: inline-block;
+    color: #202020;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    margin-right: 32px;
+    transition: color .4s ease;
+    text-decoration: none;
+}
 header .nav__items li {
     display: inline-block;
     color: #202020;
