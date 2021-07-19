@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Viking/static/css/main.9ef20f39.chunk.css",
+    "main.js": "/Viking/static/js/main.7cc11f63.chunk.js",
+    "main.js.map": "/Viking/static/js/main.7cc11f63.chunk.js.map",
+    "runtime-main.js": "/Viking/static/js/runtime-main.0bbae610.js",
+    "runtime-main.js.map": "/Viking/static/js/runtime-main.0bbae610.js.map",
+    "static/js/2.183f44b8.chunk.js": "/Viking/static/js/2.183f44b8.chunk.js",
+    "static/js/2.183f44b8.chunk.js.map": "/Viking/static/js/2.183f44b8.chunk.js.map",
+    "static/js/3.314c2d79.chunk.js": "/Viking/static/js/3.314c2d79.chunk.js",
+    "static/js/3.314c2d79.chunk.js.map": "/Viking/static/js/3.314c2d79.chunk.js.map",
+    "index.html": "/Viking/index.html",
+    "static/css/main.9ef20f39.chunk.css.map": "/Viking/static/css/main.9ef20f39.chunk.css.map",
+    "static/js/2.183f44b8.chunk.js.LICENSE.txt": "/Viking/static/js/2.183f44b8.chunk.js.LICENSE.txt",
+    "static/media/Header.css": "/Viking/static/media/Viking1.8bab222e.png",
+    "static/media/logo.03c4aa1b.png": "/Viking/static/media/logo.03c4aa1b.png",
+    "static/media/product.4cf691cb.png": "/Viking/static/media/product.4cf691cb.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0bbae610.js",
+    "static/js/2.183f44b8.chunk.js",
+    "static/css/main.9ef20f39.chunk.css",
+    "static/js/main.7cc11f63.chunk.js"
+  ]
+}
