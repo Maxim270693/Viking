@@ -13,7 +13,7 @@ header {
 }
 
 header .logo__wrapper img {
-    padding: 23px 330px 25px 111px;
+    padding: 23px 270px 25px 111px;
     max-width: 271px;
 }
 
@@ -72,7 +72,7 @@ header .search__btn {
 
 @media (max-width: 1340px) {
     header .logo__wrapper img {
-        padding: 23px 211px 25px 82px;
+        padding: 23px 155px 25px 82px;
         max-width: 251px;
     }
 }
@@ -80,6 +80,13 @@ header .search__btn {
 @media (max-width: 1171px) {
     header .logo__wrapper img {
         padding: 23px 45px 25px 82px;
+    }
+
+    header .nav__items li {
+        font-size: 19px;
+    }
+    .vikings {
+        font-size: 19px;
     }
 }
 
@@ -100,7 +107,10 @@ header .search__btn {
         max-width: 215px;
     }
     header .nav__items li {
-        font-size: 17px;
+        font-size: 15px;
+    }
+    .vikings {
+        font-size: 15px;
     }
 }
 @media (max-width: 800px) {
@@ -109,7 +119,7 @@ header .search__btn {
     }
 
     .basket__btn {
-        margin-right: 20px;
+        margin-right: 42px;
     }
 
     header .search__btn {
@@ -174,6 +184,7 @@ header .search__btn {
 
     .basket__btn {
         width: 18px;
+        margin-right: 18px;
     }
 
     .logo .MobileNavigation {

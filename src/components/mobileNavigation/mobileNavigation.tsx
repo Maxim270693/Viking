@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import './mobileNavigation.css'
 import {NavLinks} from "../navLinks/NavLinks";
 import {VscMenu} from "@react-icons/all-files/vsc/VscMenu";
 import {GrClose} from "@react-icons/all-files/gr/GrClose";

@@ -136,7 +136,7 @@ h3 {
 .modal__footer {
     height: 141px;
     background: rgba(32, 32, 32, 0.05);
-    margin-top: 20px;
+    margin-top: 33px;
 }
 .modal__footer_text {
     display: flex;
